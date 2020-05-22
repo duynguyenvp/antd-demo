@@ -54,9 +54,9 @@ function initMap() {
         var address = '';
         if (place.address_components) {
             address = [
-                (place.address_components[0] && place.address_components[0].short_name || ''),
-                (place.address_components[1] && place.address_components[1].short_name || ''),
-                (place.address_components[2] && place.address_components[2].short_name || '')
+                ((place.address_components[0] && place.address_components[0].short_name) || ''),
+                ((place.address_components[1] && place.address_components[1].short_name) || ''),
+                ((place.address_components[2] && place.address_components[2].short_name) || '')
             ].join(' ');
         }
 
@@ -101,7 +101,7 @@ const Map = () => {
                 <div id="map"></div>
             </div>
             <div id="infowindow-content">
-                <img src="" width="16" height="16" id="place-icon" />
+                <img src="" width="16" height="16" id="place-icon" alt="" />
                 <span id="place-name" className="title"></span>
                 <br />
                 <span id="place-address"></span>

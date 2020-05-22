@@ -86,9 +86,9 @@ const ChangePassword = ({ visible, onClose }) => {
     };
 
     const handleOk = e => {
-        if (password.validateStatus != "success"
-            || newPassword.validateStatus != "success"
-            || confirmPassword.validateStatus != "success") {
+        if (password.validateStatus !== "success"
+            || newPassword.validateStatus !== "success"
+            || confirmPassword.validateStatus !== "success") {
             return
         }
         console.log(password, newPassword, confirmPassword)
