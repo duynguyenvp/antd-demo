@@ -1,0 +1,6 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "no-mixed-operators": "off" // <- turn the eslint rule off by adding "off" or 0
+    }
+}

@@ -1,0 +1,67 @@
+.demo {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.autocomplete-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.box-input {
+    display: flex;
+    padding: 12px 0;
+}
+
+#map-autocomplete {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgb(163, 163, 163);
+    margin: 0px;
+    padding: 8px 32px;
+    max-height: none;
+    min-height: auto;
+    max-width: none;
+    min-width: 0px;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#data {
+    white-space: nowrap;
+    position: absolute;
+    padding: 20px;
+    background: yellow;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
