@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Map from './gmap'
+import Home from './home'
 
 const App = () => (
   <div className="App">
-    <Map />
+    <Home />
   </div>
 );
 
