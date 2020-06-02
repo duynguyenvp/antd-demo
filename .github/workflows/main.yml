@@ -24,3 +24,11 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USER }}/demoantd:latest -t ${{ secrets.DOCKER_USER }}/demoantd:${GITHUB_SHA::8} .
       - name: Publish Docker image
         run: docker push ${{ secrets.DOCKER_USER }}/demoantd:latest
+  test:
+    needs: cd
+    runs-on: self-hosted
+    steps:
+      - name: pull image
+        run: docker pull duynguyen26394/demoantd
+      - name: docker run
+        run: docker run -it -d -p 6666:80 duynguyen26394/demoantd
